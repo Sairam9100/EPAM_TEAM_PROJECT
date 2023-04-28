@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/bsrra/IdeaProjects/EPAM_TEAM_PROJECT/src/test/java/org/example/LinkedinTesting.java"><classes><class name="org.example.LinkedinTesting"><methods><include name="LinkedinTest"/></methods></class></classes></test></suite>
