@@ -18,6 +18,8 @@ public class Module2 {
 
     @FindBy(xpath = "//button[contains(text(),'Sign in')]")
     WebElement login;
+    @FindBy(id = "error-for-password")
+    WebElement Wrong_Login;
 
     public Module2(WebDriver driver){
         this.driver = driver;
@@ -30,8 +32,11 @@ public class Module2 {
         pass.sendKeys(password);
         Thread.sleep(3000);
         login.click();
-        Thread.sleep(10000);
+        Thread.sleep(5000);
 
-
+    }
+    public WebElement Get_Wrong_Login(){
+        WebElement WrongLog = Wrong_Login;
+        return WrongLog;
     }
 }

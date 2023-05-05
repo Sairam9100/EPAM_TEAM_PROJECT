@@ -18,7 +18,7 @@ public class Module4 {
         this.driver = driver;
     }
 
-    void editProfile() throws InterruptedException {
+    public void editProfile() throws InterruptedException {
         WebElement w = (new WebDriverWait(driver, Duration.ofSeconds(30))
                 .until(ExpectedConditions.presenceOfElementLocated(welcome)));
         w.click();

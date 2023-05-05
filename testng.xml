@@ -1,2 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/bsrra/IdeaProjects/EPAM_TEAM_PROJECT/src/test/java/org/example/LinkedinTesting.java"><classes><class name="org.example.LinkedinTesting"><methods><include name="LinkedinTest"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/bsrra/IdeaProjects/EPAM_TEAM_PROJECT/src/test/java/org/example/LinkedinTestCases/ChromeTest.java">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="Url" value="https://www.linkedin.com/login"></parameter>
+        <classes>
+            <class name="org.example.LinkedinTestCases.ChromeTest">
+                <methods>
+                    <include name="LinkedinTest"/>
+                    <include name="VerifyData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/bsrra/IdeaProjects/EPAM_TEAM_PROJECT/src/test/java/org/example/LinkedinTestCases/EdgeTest.java">
+        <parameter name="browser" value="edge"></parameter>
+        <parameter name="Url" value="https://www.linkedin.com/login"></parameter>
+        <classes>
+            <class name="org.example.LinkedinTestCases.EdgeTest">
+                <methods>
+                    <include name="LinkedinTest"/>
+                    <include name="VerifyData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
